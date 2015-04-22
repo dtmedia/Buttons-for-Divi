@@ -239,13 +239,13 @@ var SocialShareKit = (function () {
             shareUrlEnc = encodeURIComponent(shareUrl);
         switch (network) {
             case 'facebook':
-                url = 'http://graph.facebook.com/?id=' + shareUrlEnc;
+                url = 'https://graph.facebook.com/?id=' + shareUrlEnc;
                 parseFunc = function (r) {
                     return onReady(r.shares ? r.shares : 0);
                 };
                 break;
             case 'twitter':
-                url = 'http://cdn.api.twitter.com/1/urls/count.json?url=' + shareUrlEnc;
+                url = 'https://cdn.api.twitter.com/1/urls/count.json?url=' + shareUrlEnc;
                 parseFunc = function (r) {
                     return onReady(r.count);
                 };
