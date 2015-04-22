@@ -1,0 +1,52 @@
+// Default Buttons
+
+///////// Default State ////////
+.et_pb_pricing_table_button, .et_pb_promo_button, a.et_pb_more_button, .et_pb_newsletter_button, .comment-reply-link, .form-submit input, .et_pb_contact_submit, .et_pb_contact_reset, .single_add_to_cart_button .button
+	font-size: 20px
+	font-weight: 500
+	-moz-border-radius: 3px
+	-webkit-border-radius: 3px
+	border-radius: 3px
+	padding: 6px 20px
+	line-height: 1.7em
+	background: transparent
+	border: 2px solid
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	-moz-transition: all 0.2s
+	-webkit-transition: all 0.2s
+	transition: all 0.2s
+	position: relative
+
+/////// Hover States ///////
+.et_pb_promo_button:hover, a.et_pb_more_button:hover, .et_pb_newsletter_button:hover
+	background: rgba( 255, 255, 255, 0.2 )
+	border: 2px solid transparent
+	padding: 6px 34px 6px 14px !important
+
+.et_pb_pricing_table_button:hover, .et_pb_bg_layout_light .et_pb_promo_button:hover, .et_pb_bg_layout_light .et_pb_more_button:hover, .et_pb_bg_layout_light .et_pb_newsletter_button:hover, .comment-reply-link:hover, .form-submit input:hover, .et_pb_contact_submit:hover, .et_pb_contact_reset:hover
+	background: rgba( 0, 0, 0, 0.05 )
+	border: 2px solid transparent
+	padding: 6px 34px 6px 14px !important
+
+.form-submit input:hover, .et_pb_contact_submit:hover, .et_pb_contact_reset:hover
+	padding: 6px 20px !important
+
+/////// After States ///////
+.et_pb_pricing_table_button:after, .et_pb_promo_button:after, a.et_pb_more_button:after, .et_pb_newsletter_button:after, .comment-reply-link:after
+	font-size: 32px
+	line-height: 1em
+	content: "\35"
+	opacity: 0
+	position: absolute
+	margin-left: -20px
+	-moz-transition: all 0.2s
+	-webkit-transition: all 0.2s
+	transition: all 0.2s
+	top: 7px
+	right: 5px
+
+.et_pb_pricing_table_button:hover:after, .et_pb_promo_button:hover:after, a.et_pb_more_button:hover:after, .et_pb_newsletter_button:hover:after, .comment-reply-link:hover:after
+	opacity: 1
+	margin-left: 0
+	
